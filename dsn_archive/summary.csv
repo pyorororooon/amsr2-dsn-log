@@ -1,0 +1,10 @@
+poll_utc,feed_utc,pass_id,node,target_utc,dt_sec,station,dish,activity,azimuth_deg,elevation_deg,wind_kmh,up_active_bands,up_x_power_kw,up_spacecraft,down_active_bands
+2026-08-01T18:56:27Z,2026-08-01T18:56:24+00:00,,,,,Goldstone,DSS14,Engineering Upgrades,0,90,,,,,
+2026-08-01T18:56:27Z,2026-08-01T18:56:24+00:00,,,,,Goldstone,DSS25,"Spacecraft Telemetry, Tracking, and Command",258,58,11,X,5.1,MRO,X;X
+2026-08-01T18:56:27Z,2026-08-01T18:56:24+00:00,,,,,Goldstone,DSS26,"Spacecraft Telemetry, Tracking, and Command",0,90,,,,,
+2026-08-01T18:56:27Z,2026-08-01T18:56:24+00:00,,,,,Goldstone,DSS24,"Spacecraft Telemetry, Tracking, and Command",128,54,11,S,,SOHO,S
+2026-08-01T18:56:27Z,2026-08-01T18:56:24+00:00,,,,,Madrid,DSS55,Engineering Upgrades,0,90,,,,,
+2026-08-01T18:56:27Z,2026-08-01T18:56:24+00:00,,,,,Canberra,DSS35,"Spacecraft Telemetry, Tracking, and Command",304,43,0,S,,LRO,S
+2026-08-01T18:56:27Z,2026-08-01T18:56:24+00:00,,,,,Canberra,DSS36,"Spacecraft Telemetry, Tracking, and Command",315,37,0,X,0.1,MMS1,S
+2026-08-01T18:56:27Z,2026-08-01T18:56:24+00:00,,,,,Canberra,DSS34,"Spacecraft Telemetry, Tracking, and Command",47,15,0,,,,
+2026-08-01T18:56:27Z,2026-08-01T18:56:24+00:00,,,,,Canberra,DSS43,"Spacecraft Telemetry, Tracking, and Command",217,35,0,,,,

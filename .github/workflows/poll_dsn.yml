@@ -46,7 +46,7 @@ jobs:
 
       - name: Poll DSN Now
         env:
-          DSN_UA: "amsr2-rfi-research (contact: itoaki@aori.u-tokyo,ac,jp)"
+          DSN_UA: "amsr2-rfi-research (contact: itoaki@aori.u-tokyo.ac.jp)"
           WINDOW_BEFORE_SEC: "600"
           WINDOW_AFTER_SEC: "600"
           POLL_INTERVAL_SEC: "60"

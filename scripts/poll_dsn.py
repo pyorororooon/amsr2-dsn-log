@@ -1,0 +1,67 @@
+name: Poll DSN at AMSR2 Goldstone crossing
+
+on:
+  schedule:
+    # Descending targets span 09:11:18–10:18:39 UTC (034D/047D excluded).
+    - cron: '45 8 * * *'
+    # Ascending targets span 20:20:31–21:33:52 UTC.
+    - cron: '0 20 * * *'
+  workflow_dispatch:
+    inputs:
+      node:
+        description: 'which node to poll'
+        required: true
+        default: 'once'
+        type: choice
+        options: [once, D, A]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dsn-poll
+  cancel-in-progress: false
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Decide node
+        id: n
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "node=${{ inputs.node }}" >> "$GITHUB_OUTPUT"
+          elif [ "$(date -u +%H)" -lt 12 ]; then
+            echo "node=D" >> "$GITHUB_OUTPUT"
+          else
+            echo "node=A" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Poll DSN Now
+        env:
+          DSN_UA: "amsr2-rfi-research (contact: YOUR_EMAIL_HERE)"
+          WINDOW_BEFORE_SEC: "600"
+          WINDOW_AFTER_SEC: "600"
+          POLL_INTERVAL_SEC: "60"
+          EXCLUDE_PASSES: "034D,047D"
+        run: python scripts/poll_dsn.py ${{ steps.n.outputs.node }}
+
+      - name: Commit results
+        run: |
+          git config user.name  "dsn-poll-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dsn_archive
+          if git diff --cached --quiet; then
+            echo "nothing to commit"
+          else
+            git commit -m "DSN poll ${{ steps.n.outputs.node }} $(date -u +%Y-%m-%dT%H:%MZ)"
+            git pull --rebase --autostash
+            git push
+          fi

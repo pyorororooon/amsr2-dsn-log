@@ -1,0 +1,278 @@
+{
+ "anchor_date_utc": "2026-08-01",
+ "cycle_epoch_utc": "2026-03-02",
+ "cycle_days": 16,
+ "note": "ref_sec is seconds-of-day UTC at anchor_date; add drift_sec_per_day*(date-anchor) days",
+ "passes": [
+  {
+   "pass_id": "034D",
+   "node": "D",
+   "doc": 6,
+   "ref_sec": 32736.5,
+   "drift_sec_per_day": -0.16618,
+   "dist_km_median": 77.2,
+   "n": 10,
+   "ref_utc_hhmmss": "09:05:36"
+  },
+  {
+   "pass_id": "035D",
+   "node": "D",
+   "doc": 13,
+   "ref_sec": 33079.9,
+   "drift_sec_per_day": -0.19616,
+   "dist_km_median": 2.5,
+   "n": 9,
+   "ref_utc_hhmmss": "09:11:20"
+  },
+  {
+   "pass_id": "036D",
+   "node": "D",
+   "doc": 4,
+   "ref_sec": 33423.0,
+   "drift_sec_per_day": -0.17026,
+   "dist_km_median": 3.4,
+   "n": 10,
+   "ref_utc_hhmmss": "09:17:03"
+  },
+  {
+   "pass_id": "037D",
+   "node": "D",
+   "doc": 11,
+   "ref_sec": 33770.1,
+   "drift_sec_per_day": -0.20565,
+   "dist_km_median": 3.2,
+   "n": 9,
+   "ref_utc_hhmmss": "09:22:50"
+  },
+  {
+   "pass_id": "038D",
+   "node": "D",
+   "doc": 2,
+   "ref_sec": 34128.7,
+   "drift_sec_per_day": -0.17945,
+   "dist_km_median": 3.1,
+   "n": 10,
+   "ref_utc_hhmmss": "09:28:49"
+  },
+  {
+   "pass_id": "039D",
+   "node": "D",
+   "doc": 9,
+   "ref_sec": 34487.3,
+   "drift_sec_per_day": -0.20572,
+   "dist_km_median": 2.9,
+   "n": 9,
+   "ref_utc_hhmmss": "09:34:47"
+  },
+  {
+   "pass_id": "040D",
+   "node": "D",
+   "doc": 0,
+   "ref_sec": 34852.4,
+   "drift_sec_per_day": -0.18074,
+   "dist_km_median": 3.3,
+   "n": 10,
+   "ref_utc_hhmmss": "09:40:52"
+  },
+  {
+   "pass_id": "041D",
+   "node": "D",
+   "doc": 7,
+   "ref_sec": 35222.9,
+   "drift_sec_per_day": -0.15933,
+   "dist_km_median": 4.5,
+   "n": 10,
+   "ref_utc_hhmmss": "09:47:03"
+  },
+  {
+   "pass_id": "042D",
+   "node": "D",
+   "doc": 14,
+   "ref_sec": 35588.3,
+   "drift_sec_per_day": -0.19453,
+   "dist_km_median": 2.5,
+   "n": 9,
+   "ref_utc_hhmmss": "09:53:08"
+  },
+  {
+   "pass_id": "043D",
+   "node": "D",
+   "doc": 5,
+   "ref_sec": 35965.0,
+   "drift_sec_per_day": -0.16736,
+   "dist_km_median": 3.8,
+   "n": 10,
+   "ref_utc_hhmmss": "09:59:25"
+  },
+  {
+   "pass_id": "044D",
+   "node": "D",
+   "doc": 12,
+   "ref_sec": 36339.3,
+   "drift_sec_per_day": -0.18997,
+   "dist_km_median": 3.8,
+   "n": 9,
+   "ref_utc_hhmmss": "10:05:39"
+  },
+  {
+   "pass_id": "045D",
+   "node": "D",
+   "doc": 3,
+   "ref_sec": 36724.8,
+   "drift_sec_per_day": -0.17542,
+   "dist_km_median": 3.4,
+   "n": 10,
+   "ref_utc_hhmmss": "10:12:05"
+  },
+  {
+   "pass_id": "046D",
+   "node": "D",
+   "doc": 10,
+   "ref_sec": 37119.4,
+   "drift_sec_per_day": -0.20256,
+   "dist_km_median": 2.5,
+   "n": 9,
+   "ref_utc_hhmmss": "10:18:39"
+  },
+  {
+   "pass_id": "047D",
+   "node": "D",
+   "doc": 1,
+   "ref_sec": 37504.3,
+   "drift_sec_per_day": -0.19207,
+   "dist_km_median": 89.3,
+   "n": 9,
+   "ref_utc_hhmmss": "10:25:04"
+  },
+  {
+   "pass_id": "132A",
+   "node": "A",
+   "doc": 4,
+   "ref_sec": 73231.1,
+   "drift_sec_per_day": -0.1742,
+   "dist_km_median": 26.2,
+   "n": 10,
+   "ref_utc_hhmmss": "20:20:31"
+  },
+  {
+   "pass_id": "133A",
+   "node": "A",
+   "doc": 11,
+   "ref_sec": 73560.9,
+   "drift_sec_per_day": -0.18998,
+   "dist_km_median": 3.2,
+   "n": 9,
+   "ref_utc_hhmmss": "20:26:01"
+  },
+  {
+   "pass_id": "134A",
+   "node": "A",
+   "doc": 2,
+   "ref_sec": 73904.8,
+   "drift_sec_per_day": -0.17544,
+   "dist_km_median": 2.5,
+   "n": 10,
+   "ref_utc_hhmmss": "20:31:45"
+  },
+  {
+   "pass_id": "135A",
+   "node": "A",
+   "doc": 9,
+   "ref_sec": 74253.0,
+   "drift_sec_per_day": -0.20569,
+   "dist_km_median": 3.2,
+   "n": 9,
+   "ref_utc_hhmmss": "20:37:33"
+  },
+  {
+   "pass_id": "136A",
+   "node": "A",
+   "doc": 0,
+   "ref_sec": 74610.3,
+   "drift_sec_per_day": -0.1807,
+   "dist_km_median": 3.3,
+   "n": 10,
+   "ref_utc_hhmmss": "20:43:30"
+  },
+  {
+   "pass_id": "137A",
+   "node": "A",
+   "doc": 7,
+   "ref_sec": 74974.6,
+   "drift_sec_per_day": -0.15705,
+   "dist_km_median": 4.2,
+   "n": 10,
+   "ref_utc_hhmmss": "20:49:35"
+  },
+  {
+   "pass_id": "138A",
+   "node": "A",
+   "doc": 14,
+   "ref_sec": 75333.8,
+   "drift_sec_per_day": -0.1976,
+   "dist_km_median": 3.9,
+   "n": 9,
+   "ref_utc_hhmmss": "20:55:34"
+  },
+  {
+   "pass_id": "139A",
+   "node": "A",
+   "doc": 5,
+   "ref_sec": 75705.1,
+   "drift_sec_per_day": -0.16677,
+   "dist_km_median": 2.7,
+   "n": 10,
+   "ref_utc_hhmmss": "21:01:45"
+  },
+  {
+   "pass_id": "140A",
+   "node": "A",
+   "doc": 12,
+   "ref_sec": 76072.9,
+   "drift_sec_per_day": -0.19305,
+   "dist_km_median": 3.6,
+   "n": 9,
+   "ref_utc_hhmmss": "21:07:53"
+  },
+  {
+   "pass_id": "141A",
+   "node": "A",
+   "doc": 3,
+   "ref_sec": 76451.3,
+   "drift_sec_per_day": -0.17428,
+   "dist_km_median": 3.1,
+   "n": 10,
+   "ref_utc_hhmmss": "21:14:11"
+  },
+  {
+   "pass_id": "142A",
+   "node": "A",
+   "doc": 10,
+   "ref_sec": 76829.5,
+   "drift_sec_per_day": -0.19941,
+   "dist_km_median": 2.5,
+   "n": 9,
+   "ref_utc_hhmmss": "21:20:30"
+  },
+  {
+   "pass_id": "143A",
+   "node": "A",
+   "doc": 1,
+   "ref_sec": 77220.7,
+   "drift_sec_per_day": -0.1778,
+   "dist_km_median": 2.2,
+   "n": 10,
+   "ref_utc_hhmmss": "21:27:01"
+  },
+  {
+   "pass_id": "144A",
+   "node": "A",
+   "doc": 8,
+   "ref_sec": 77632.5,
+   "drift_sec_per_day": -0.20573,
+   "dist_km_median": 4.8,
+   "n": 9,
+   "ref_utc_hhmmss": "21:33:52"
+  }
+ ]
+}
